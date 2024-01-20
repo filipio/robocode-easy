@@ -12,3 +12,6 @@ gradle-app.setting
 .sandbox
 .idea/uiDesigner.xml
 robocode.tests/screenshots/
+.idea
+.vscode
+app

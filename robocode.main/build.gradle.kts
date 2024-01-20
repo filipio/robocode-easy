@@ -4,6 +4,10 @@ plugins {
     `java-library`
 }
 
+application {
+  mainClassName = "net.sf.robocode.main.Robocode"
+}
+
 description = "Robocode Main application"
 
 dependencies {
@@ -17,6 +21,7 @@ dependencies {
     implementation(project(":robocode.ui"))
     implementation(project(":robocode.ui.editor"))
     implementation(project(":robocode.tests"))
+    implementation(project(":robocode.samples"))
 }
 
 tasks {

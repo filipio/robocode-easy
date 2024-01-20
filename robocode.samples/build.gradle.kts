@@ -5,6 +5,7 @@ plugins {
 
 dependencies {
     implementation(project(":robocode.api"))
+    implementation("org.jeasy:easy-rules-core:4.0.0")
 }
 
 description = "Robocode Samples"
@@ -39,7 +40,7 @@ tasks {
         dependsOn("copyContent")
         dependsOn("copyClasses")
         dependsOn("javadoc")
-        from("src/main/java") {
+        from("src/main/java/own") {
             include("**")
         }
         from("src/main/resources") {
